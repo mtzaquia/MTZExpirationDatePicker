@@ -72,13 +72,17 @@ static NSInteger const MTZYearComponent = 1;
 
 - (void)setMinimumDate:(NSDate *)minimumDate {
     _minimumDate = minimumDate;
-    NSAssert(_minimumDate.timeIntervalSince1970 >= _maximumDate.timeIntervalSince1970, @"The minimum date cannot be equal to or later than maximum date.");
+    if (self.maximumDate) {
+        NSAssert(_minimumDate.timeIntervalSince1970 < self.maximumDate.timeIntervalSince1970, @"The minimum date cannot be equal to or later than maximum date.");
+    }
     [self setDate:_minimumDate animated:NO];
 }
 
 - (void)setMaximumDate:(NSDate *)maximumDate {
     _maximumDate = maximumDate;
-    NSAssert(_maximumDate.timeIntervalSince1970 <= _minimumDate.timeIntervalSince1970, @"The maximum date cannot be equal to or earlier than minimum date.");
+    if (self.minimumDate) {
+        NSAssert(_maximumDate.timeIntervalSince1970 > self.minimumDate.timeIntervalSince1970, @"The maximum date cannot be equal to or earlier than minimum date.");
+    }
 }
 
 - (void)setShowsSeparator:(BOOL)showsSlash {
