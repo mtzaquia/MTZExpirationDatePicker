@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MTZExpirationDatePicker'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A simple UIPickerView subclass optimised for expiration date handling.'
  
   s.description      = <<-DESC
