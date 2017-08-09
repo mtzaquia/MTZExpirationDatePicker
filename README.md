@@ -4,7 +4,15 @@ The `MTZExpirationDatePicker` is a simple component that subclass `UIPickerView`
 ![MTZExpirationDatePicker](https://github.com/mtzaquia/MTZExpirationDatePicker/raw/assets/mtzexpirationdatepicker-pic-1.png)
 
 # Installation
+
+## Manual
 Simply drop the files `MTZExpirationDatePicker.h` and `MTZExpirationDatePicker.m` to your project and import wherever needed.
+
+## CocoaPods
+You can also declare the following on your `Podfile`:
+```ruby
+pod 'MTZExpirationDatePicker', '~> 1.0.1'
+```
 
 # Sample Usage
 Using the picker is relatively straight forward. Most commonly as an `inputView` as such:
