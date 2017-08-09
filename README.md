@@ -1,5 +1,5 @@
 # MTZExpirationDatePicker
-The `MTZExpirationDatePicker` is a simple component that subclass `UIPickerView` and provides an easy and drop-in way to use it with your project. It also allows the setup of a minimum and maximum date.
+The `MTZExpirationDatePicker` is a simple component that subclasses `UIPickerView` and provides an easy and drop-in way to use it with your project. It also allows the setup of a minimum and maximum date.
 
 ![MTZExpirationDatePicker](https://github.com/mtzaquia/MTZExpirationDatePicker/raw/assets/mtzexpirationdatepicker-pic-1.png)
 
